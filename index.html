@@ -15,7 +15,7 @@
 <div id="appShell"><div class="w">
 <h1>🏥 المركز الطبي التخصصي — سجلات المرضى</h1>
 <div class="st"><div><b id="s1"></b><span>عيادة</span></div><div><b id="s2"></b><span>مريض مسجل</span></div><div><b id="s3"></b><span>متوسط مرضى العيادة</span></div></div>
-<div class="bar"><input id="q" type="search" placeholder="🔍 ابحث بالاسم أو رقم الملف" autocomplete="off"><select id="cs"></select><button class="p" id="add">➕ مريض جديد</button></div>
+<div class="bar"><input id="q" type="search" placeholder="🔍 ابحث بالاسم أو رقم الملف" autocomplete="off"><select id="cs"></select><button class="p" id="add">➕ مريض جديد</button><button id="backupBtn" type="button">💾 نسخة احتياطية Excel</button><button id="pdfBtn" type="button">📄 تنزيل PDF</button></div>
 <div class="cl" id="chips"></div>
 <div class="info" id="info"></div><div id="list"></div><button class="more" id="more" style="display:none">عرض المزيد</button>
 </div><!-- appShell content -->
@@ -28,4 +28,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 <script src="js/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous"></script>
 <script src="js/app.js"></script></body></html>
